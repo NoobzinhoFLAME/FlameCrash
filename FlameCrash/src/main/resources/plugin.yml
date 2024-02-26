@@ -1,0 +1,10 @@
+name: FlameCrash
+version: 1.0.0
+main: com.noobzinhoflame.crash.Main
+description: §aUm plugin de /crash feito por NoobzinhoFLAME.
+author: NoobzinhoFLAME
+
+commands:
+  crash:
+    description: Comando para crashar um jogador.
+    use: /crash <player>
