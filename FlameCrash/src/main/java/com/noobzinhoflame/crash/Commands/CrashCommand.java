@@ -42,8 +42,8 @@ public class CrashCommand implements CommandExecutor {
         Bukkit.getScheduler().runTaskLater(Main.getPlugin(Main.class), new Runnable() {
             public void run() {
                 sender.sendMessage("§aVocê crashou o jogador " + target.getName() + " com sucesso!");
-                target.kickPlayer("");
                 target.getWorld().strikeLightningEffect(target.getLocation());
+                target.kickPlayer("")
             }
         }, 100L);
         return true;
